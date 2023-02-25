@@ -6,6 +6,7 @@ const options = {
   },
 };
 
+const getWeather=(city)=>{
 fetch(
   "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Delhi",
   options
@@ -25,3 +26,4 @@ fetch(
     sunset.innerHTML = response.sunset;
   })
   .catch((err) => console.error(err));
+}
