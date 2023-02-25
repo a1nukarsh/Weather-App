@@ -22,7 +22,7 @@ const getWeather = (city) => {
       min_temp.innerHTML = response.min_temp;
       max_temp.innerHTML = response.max_temp;
       wind_speed.innerHTML = response.wind_speed;
-      wind_degrees.innerHTML = response.wind_degrees;
+    //   wind_degrees.innerHTML = response.wind_degrees;
       sunrise.innerHTML = response.sunrise;
       sunset.innerHTML = response.sunset;
     })
