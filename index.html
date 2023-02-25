@@ -7,6 +7,7 @@
   <title>Mausam Tak</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About This App</a>
+            <a class="nav-link" href="#about">About This App</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,62 +47,72 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Temperatures</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title"><span id="temp" ></span><small class="text-muted fw-light">°C</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <!-- <li>Temperature is <span id="temp" ></span></li> -->
-              <li>Minimum Temperature is <span id="min_temp" ></span>°C</li>
-              <li>Maximum Temperature is <span id="max_temp" ></span>°C</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-success">Sign up for free</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Humidity Info</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title"><span id="humidity" ></span><small class="text-muted fw-light">%</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Cloud PCT is <span id="cloud_pct" ></span></li>
-              <li>Feels Like <span id="feels_like" ></span>°C</li>
-              <!-- <li>Humidity is <span id="humidity" ></span></li> -->
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-success">Get started</button>
+  <section id="home">
+    <div class="container">
+      <h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Temperatures</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><span id="temp"></span><small
+                  class="text-muted fw-light">°C</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <!-- <li>Temperature is <span id="temp" ></span></li> -->
+                <li>Minimum Temperature is <span id="min_temp"></span>°C</li>
+                <li>Maximum Temperature is <span id="max_temp"></span>°C</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-success">Sign up for free</button>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm ">
-          <div class="card-header py-3 ">
-            <h4 class="my-0 fw-normal">Wind & Sun</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title"><span id="wind_speed" ></span><small class="text-muted fw-light">km/h</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <!-- <li>Wind Speed is <span id="wind_speed" ></span></li> -->
-              <!-- <li>Wind Degrees is <span id="wind_degrees" ></span></li> -->
-              <li>Sunrise Time is <span id="sunrise" ></span></li>
-              <li>Sunset Time is <span id="sunset" ></span></li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-success">Contact us</button>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Humidity Info</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><span id="humidity"></span><small
+                  class="text-muted fw-light">%</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Cloud PCT is <span id="cloud_pct"></span></li>
+                <li>Feels Like <span id="feels_like"></span>°C</li>
+                <!-- <li>Humidity is <span id="humidity" ></span></li> -->
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-success">Get started</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- <h2 class="display-6 text-center mb-4">Shanghai</h2>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 ">
+              <h4 class="my-0 fw-normal">Wind & Sun</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><span id="wind_speed"></span><small
+                  class="text-muted fw-light">km/h</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <!-- <li>Wind Speed is <span id="wind_speed" ></span></li> -->
+                <!-- <li>Wind Degrees is <span id="wind_degrees" ></span></li> -->
+                <li>Sunrise Time is <span id="sunrise"></span></li>
+                <li>Sunset Time is <span id="sunset"></span></li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-success">Contact us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="about">
+    <div class="about container">
+      <h1 class="text-center">About</h1>
+    </div>
+  </section>
+
+  <!-- <h2 class="display-6 text-center mb-4">Shanghai</h2>
 
     <div class="table-responsive">
       <table class="table text-center">

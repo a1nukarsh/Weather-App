@@ -1,0 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#home{
+    border: 2px solid red;
+    height: 90vh;
+}
+#about{
+    border: 2px solid red;
+    /* padding-top: 50px; */
+    height: 100vh;
+}
